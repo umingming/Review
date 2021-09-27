@@ -22,8 +22,8 @@ public class Calendar {
 			>7로 나눠서 개행 문자 출력
 		*/
 
-		int year = 2021;
-		int month = 9;
+		int year = 1;
+		int month = 1;
 		
 		int dayOfWeek = getDayOfWeek(year, month);
 		int lastDay = getLastDay(year, month);
@@ -71,7 +71,7 @@ public class Calendar {
 	}//lastDay
 
 	private static boolean isLeapYear(int year) {
-		if(year % 4 == 0 && year % 100 == 0 || year % 400 == 0) {
+		if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
 			return true;
 		} else {
 			return false;
