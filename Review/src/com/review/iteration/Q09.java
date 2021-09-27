@@ -41,7 +41,6 @@ public class Q09 {
 			
 		}
 		
-		
 		System.out.printf("컴퓨터가 생각한 숫자는 %d입니다.%n", random);
 		System.out.printf("정답을 맞추는데 시도한 횟수는 %d입니다.%n%n", sum);
 		System.out.println("프로그램을 종료합니다.");
