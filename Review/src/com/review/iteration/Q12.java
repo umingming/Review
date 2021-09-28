@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 public class Q12 {
 
 	public static void main(String[] args) throws Exception{
+		//TODO 하다 말았음
 		/*
 		숫자를 10개 입력 받아 한글로 변환 후 출력하시오.
 		-2자리 이상 숫자를 입력하면 결과없이 프로그램을 중지시키시오.
