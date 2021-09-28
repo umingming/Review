@@ -35,7 +35,11 @@ public class Q11 {
 						result = "짝짝";
 					}
 				} else {
-						result += (n+"").charAt(i);
+					if(result.indexOf("짝") == -1) {
+						result = n + "";
+					} else {
+						result = "짝";
+					}
 				}
 			}
 			System.out.print(result + " ");
