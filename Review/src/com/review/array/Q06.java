@@ -34,20 +34,19 @@ public class Q06 {
 		int[] nums = new int[num];
 		
 		for(int i=0; i<nums.length; i++) {
-			nums[i] = (int)(Math.random() * (max - min + 1)) + min;
+			int n = (int)(Math.random() * (max - min + 1)) + min;
+			boolean isDuplicate = false;
 			
-			for(;;) {
-				int duplicate = 0;
-				for(int j=0; j<i; j++) {
-					if(nums[i] == nums[j]) {
-						duplicate++;
-					}
+			for(int j=0; j<i; j++) {
+				if(nums[j] == n) {
+					isDuplicate = true;
 				}
-				
-				if(duplicate == 0) {
-					break;
-				}
-				nums[i] = (int)(Math.random() * (max - min + 1)) + min;
+			}
+			
+			if(!isDuplicate) {
+				nums[i] = n;
+			} else {
+				i--;
 			}
 		}
 		
