@@ -5,6 +5,7 @@ public class StringBuilder {
 		StringBuilder str = new StringBuilder();
 		String s1 = "this is str";
 		str.append(s1);
+		
 		//왜 안 되지..?
 		System.out.println(str.toString());
 		
