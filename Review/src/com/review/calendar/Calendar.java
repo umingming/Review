@@ -22,32 +22,35 @@ public class Calendar {
 			>7로 나눠서 개행 문자 출력
 		*/
 
-		int year = 2021;
-		int month = 8;
+		int year = 1;
+		int month = 1;
 		
-		System.out.println("\t\t\t9월\t\t\t");
-		System.out.println("[월]\t[화]\t[수]\t[목]\t[금]\t[토]\t[일]");
+		int dayOfWeek = getDayOfWeek(year, month);
+		int lastDay = getLastDay(year, month);
 		
-		for(int i=0; i<dayOfWeek(year, month); i++){
+		System.out.printf("\t\t\t%d년 %d월%n", year, month);
+		System.out.println("[일]\t[월]\t[화]\t[수]\t[목]\t[금]\t[토]");
+		
+		for(int i=0; i<dayOfWeek; i++){
 			System.out.print("\t");
 		}
 		
-		for(int i=1; i<=lastDay(year, month); i++) {
+		for(int i=1; i<=lastDay; i++) {
 			System.out.printf("%3d\t", i);
-			if((i + dayOfWeek(year, month)) % 7 == 0) {
+			if((i + dayOfWeek) % 7 == 0) {
 				System.out.println();
 			}
 		}
 	}
 
-	private static int dayOfWeek(int year, int month) {
+	private static int getDayOfWeek(int year, int month) {
 		int day = 0;
 		for(int i=1; i<year; i++) {
 			day += isLeapYear(i) ? 366 : 365;
 		}
 		
 		for(int i=1; i<month; i++) {
-			day += lastDay(year, i);
+			day += getLastDay(year, i);
 		}
 		
 		day++;
@@ -55,7 +58,7 @@ public class Calendar {
 		return day % 7;
 	}//dayOfWeek
 
-	private static int lastDay(int year, int month) {
+	private static int getLastDay(int year, int month) {
 		switch (month) {
 		case 1, 3, 5, 7, 8, 10, 12 :
 			return 31;
@@ -68,7 +71,8 @@ public class Calendar {
 	}//lastDay
 
 	private static boolean isLeapYear(int year) {
-		if(year % 4 == 0 && year % 100 == 0 || year % 400 == 0) {
+		
+		if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
 			return true;
 		} else {
 			return false;

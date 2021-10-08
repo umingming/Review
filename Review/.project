@@ -14,4 +14,21 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Q06.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/AppData/Local/Temp/BNZ.615b00df56af10f6/Q06.java</locationURI>
+		</link>
+		<link>
+			<name>src/com/review/string/Q06t.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/AppData/Local/Temp/BNZ.615b23645735e89e/Q06t.java</locationURI>
+		</link>
+		<link>
+			<name>src/com/review/string/Q07.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/AppData/Local/Temp/BNZ.615b236d57360d5c/Q07.java</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
