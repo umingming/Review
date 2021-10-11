@@ -6,7 +6,7 @@ public class Builder {
 		StringBuilder sb = new StringBuilder("hi ");
 		sb.append("umi");
 		
-		System.out.println(sb.toString());
+		System.out.println(sb.toString().substring(0, 2));
 
 	}
 
