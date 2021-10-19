@@ -15,8 +15,15 @@ public class Sort {
 	}
 
 	private static void m4() {
-		// TODO Auto-generated method stub
+		User[] list = new User[5];
+		list[0] = new User("홍길동", 5, 1998, 6, 10);
+		list[1] = new User("이유미", 2, 1994, 3, 10);
+		list[2] = new User("홍상순", 3, 1993, 1, 10);
+		list[3] = new User("아무개", 4, 1992, 4, 10);
+		list[4] = new User("호호호", 1, 1995, 2, 10);
 		
+		Arrays.sort(list);
+		System.out.println(Arrays.toString(list));
 	}
 
 	private static void m3() {
