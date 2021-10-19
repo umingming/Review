@@ -27,11 +27,10 @@ public class Q10 {
 		File[] file = dir.listFiles();
 		
 		for(int i=0; i<file.length; i++) {
-			String name = file[i].getName();
 			String newPath = String.format("%s\\%s\\%s",
 						path,
-						name.substring(0,3),
-						name.substring(4,8));
+						file[i].getName().substring(0,3),
+						file[i].getName().substring(4,8));
 					
 			File newDir = new File(newPath);
 			newDir.mkdirs();

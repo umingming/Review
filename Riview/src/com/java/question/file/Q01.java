@@ -29,7 +29,6 @@ public class Q01 {
 			>size를 리턴함.
 		 */
 		
-		
 		Scanner scan = new Scanner(System.in);
 		System.out.print("파일 경로 : ");
 		String path = scan.nextLine();
@@ -50,8 +49,8 @@ public class Q01 {
 			case 3 : sizeStr = "GB"; break;
 			case 4 : sizeStr = "TB"; break;
 			}
-			
 			System.out.printf("파일 크기 : %.1f%s%n", sizeNum, sizeStr);
+			
 		} else {
 			System.out.println("잘못된 파일 경로입니다.");
 		}

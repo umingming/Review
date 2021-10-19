@@ -29,6 +29,7 @@ public class Q09 {
 						>set메소드로 j번째에 j+1, j+1에 temp값 저장
 		6. for문 ArrayList 객체 반복
 			>파일명, 크기, 폴더 출력
+				>크키는 KB로 바꿀 것.
 		 */
 		
 		File dir = new File("C:\\java\\file\\파일_디렉토리_문제\\크기 정렬");
