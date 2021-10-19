@@ -15,6 +15,7 @@ public class Sort {
 	}
 
 	private static void m4() {
+		
 		User[] list = new User[5];
 		list[0] = new User("홍길동", 5, 1998, 6, 10);
 		list[1] = new User("이유미", 2, 1994, 3, 10);
@@ -27,6 +28,12 @@ public class Sort {
 	}
 
 	private static void m3() {
+		int[] nums = {5, 1, 3, 4, 2};
+		Arrays.sort(nums);
+		String[] names = {"홍길동", "아무개", "하하하", "김길동", "홍길순"};
+		Arrays.sort(names);
+		
+		
 		User[] list = new User[5];
 		list[0] = new User("홍길동", 5, 1998, 6, 10);
 		list[1] = new User("이유미", 2, 1994, 3, 10);
