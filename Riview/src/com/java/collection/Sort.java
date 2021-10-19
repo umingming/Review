@@ -1,7 +1,9 @@
 package com.java.collection;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Collections;
 
 public class Sort {
 	
@@ -10,8 +12,30 @@ public class Sort {
 //		m1();
 //		m2();
 //		m3();
-		m4();
+//		m4();
+		m5();
 		
+	}
+
+	private static void m5() {
+		ArrayList<Integer> nums = new ArrayList<Integer>();
+		nums.add(5);
+		nums.add(2);
+		nums.add(3);
+		nums.add(1);
+		nums.add(4);
+		
+		System.out.println(nums);
+		System.out.println(nums);
+		
+		ArrayList<User> users = new ArrayList<User>();
+		users.add(new User("홍길동", 5, 1998, 6, 10));
+		users.add(new User("이유미", 2, 1994, 3, 10));
+		users.add(new User("홍상순", 3, 1993, 1, 10));
+		users.add(new User("아무개", 4, 1992, 4, 10));
+		users.add(new User("호호호", 1, 1995, 2, 10));
+		Collections.sort(users);
+		System.out.println(users);
 	}
 
 	private static void m4() {
@@ -136,7 +160,7 @@ class User implements Comparable<User>{
 	}
 	@Override
 	public int compareTo(User user) {
-		return this.getLevel() - user.getLevel();
+		return this.getBirthDay().compareTo(user.getBirthDay());
 	}
 	
 	
