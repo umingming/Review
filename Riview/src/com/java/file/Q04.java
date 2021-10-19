@@ -1,4 +1,4 @@
-package com.java.question.file;
+package com.java.file;
 
 import java.io.File;
 
@@ -18,8 +18,13 @@ public class Q04 {
 		File dir = new File("C:\\java\\file\\파일_디렉토리_문제\\음악 파일\\Music");
 		File[] list = dir.listFiles();
 		
-		for(int i=0; i<list.length; i++) {
-			System.out.printf("[%03d]%s%n", i+1, list[i].getName());
+		int n = 1;
+		for(File file : list) {
+			if(file.isFile() 
+					&& file.getName().toLowerCase().endsWith(".mp3")) {
+				System.out.printf("[%03d]%s%n", n, file.getName());
+				n++;
+			}
 		}
 	}
 }
