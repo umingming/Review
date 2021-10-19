@@ -52,6 +52,8 @@ public class Q01 {
 			}
 			
 			System.out.printf("파일 크기 : %.1f%s%n", sizeNum, sizeStr);
+		} else {
+			System.out.println("잘못된 파일 경로입니다.");
 		}
 
 	}
