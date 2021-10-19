@@ -9,7 +9,13 @@ public class Sort {
 		//버블 정렬
 //		m1();
 //		m2();
-		m3();
+//		m3();
+		m4();
+		
+	}
+
+	private static void m4() {
+		// TODO Auto-generated method stub
 		
 	}
 
