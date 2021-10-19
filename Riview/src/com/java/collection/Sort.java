@@ -92,7 +92,7 @@ public class Sort {
 
 }
 
-class User{
+class User implements Comparable<User>{
 	private String name;
 	private int level;
 	private Calendar birthDay;
@@ -133,6 +133,10 @@ class User{
 		sb.append("]\n");
 		
 		return sb.toString();
+	}
+	@Override
+	public int compareTo(User user) {
+		return this.getLevel() - user.getLevel();
 	}
 	
 	
