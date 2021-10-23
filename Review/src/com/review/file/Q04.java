@@ -15,8 +15,12 @@ public class Q04 {
 			>파일명을 출력할 때 일련 번호를 부여함.
 		 */
 		
-		File dir = new File(Path.Q01);
+		File dir = new File(Path.Q04);
 		File[] files = dir.listFiles();
+		
+		for(int i=0; i<files.length; i++) {
+			System.out.printf("[%03d]%s%n", i+1, files[i].getName());
+		}
 
 	}
 
